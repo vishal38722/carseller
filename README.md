@@ -18,7 +18,7 @@
 
 ### About the Project
 
-Details of the Project can be found here [Details](https://drive.google.com/file/d/1CI1XFrekIj-rhMnPkYkk5N_LD4XMwyX1/view?usp=sharing)
+Details of the Project can be found here [Details](https://drive.google.com/file/d/1u-hygOt6fT6RsoPir9nBryCF5GQKiYvO/view?usp=sharing)
 
 
 
