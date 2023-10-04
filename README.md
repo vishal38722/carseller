@@ -24,14 +24,14 @@ Inside the project directory run this command to run the project
 
 Here I have attached some screenshots of the webpages
 
-Showing pagination feature  
+#### Showing pagination feature  
 ![image 1](screenshots/ss1.png)
 
-Showing pagination feature  
+#### Showing pagination feature  
 ![image 2](screenshots/ss2.png)
 
-Showing Search feature  
+#### Showing Search feature  
 ![image 3](screenshots/ss3.png)
 
-Showing Search feature  
+#### Showing Search feature  
 ![image 4](screenshots/ss4.png)
