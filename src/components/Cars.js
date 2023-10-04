@@ -1,7 +1,11 @@
+// Cars.js
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import CarCard from './CarCard';
 import carData from '../Data.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './Cars.css';
 
 const Cars = ({ searchQuery }) => {
     const location = useLocation();
@@ -47,27 +51,31 @@ const Cars = ({ searchQuery }) => {
     };
 
     return (
-        <div className='row'>
-            {displayedCars.map((car, index) => {
-                return (
-                    <div key={index} className="col-lg-4">
-                        <CarCard url={car.url} brand={car.brand} model={car.model} capacity={car.capacity} releaseYear={car.releaseYear} fuel={car.fuel} mileage={car.mileage} rent={car.rent} type={car.type} />
-                    </div>
-                )
-            })}
-            <div>
-                <div
-                    style={{ position: "fixed", bottom: "0px", left: "50%", transform: "translateX(-50%)" }}
-                    className="container my-4 d-flex justify-content-center"
-                >
-                    <button onClick={handlePreviousPage}>&larr; Previous</button>
-                    <div>
-                        {generatePageNumbers().map((pageNum) => (
-                            <button key={pageNum} onClick={() => setCurrentPage(pageNum)} className={pageNum === currentPage ? "active" : ""}>{pageNum}</button>
-                        ))}
-                    </div>
-                    <button onClick={handleNextPage}>Next &rarr;</button>
+        <div style={{ marginBottom: '40px' }}>
+            <div className='row'>
+                {displayedCars.map((car, index) => {
+                    return (
+                        <div key={index} className="col-lg-4">
+                            <CarCard url={car.url} brand={car.brand} model={car.model} capacity={car.capacity} releaseYear={car.releaseYear} fuel={car.fuel} mileage={car.mileage} rent={car.rent} type={car.type} />
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className="pagination-container">
+                <button onClick={handlePreviousPage} className="pagination-button">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </button>
+                <div className="page-numbers">
+                    {generatePageNumbers().map((pageNum) => (
+                        <button key={pageNum} onClick={() => setCurrentPage(pageNum)} className={pageNum === currentPage ? "active" : "page-number"}>
+                            {pageNum}
+                        </button>
+                    ))}
                 </div>
+                <button onClick={handleNextPage} className="pagination-button">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </button>
             </div>
         </div>
     )

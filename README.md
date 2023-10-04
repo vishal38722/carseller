@@ -1,6 +1,11 @@
-# IPL Assignment
+# CAr Seller
 ![logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![logo](https://img.shields.io/badge/Bootstrap-20232A?style=for-the-badge&logo=bootstrap&logoColor=61DAFB)
+
+
+### About the Project
+
+Details of the Project can be found here [Details](https://drive.google.com/file/d/1u-hygOt6fT6RsoPir9nBryCF5GQKiYvO/view?usp=sharing)
 
 
 ## Getting Started
@@ -16,9 +21,17 @@
 *Inside the project directory run this command to run the project*
                 ```npm run start``` 
 
-### About the Project
 
-Details of the Project can be found here [Details](https://drive.google.com/file/d/1u-hygOt6fT6RsoPir9nBryCF5GQKiYvO/view?usp=sharing)
+*Here I have attached some screenshots of the webpages*
 
+![image 1](screenshots/ss1.png)
+
+![image 2](screenshots/ss2.png)
+
+![image 3](screenshots/ss3.png)
+
+![image 4](screenshots/ss4.png)
+
+![image 5](screenshots/ss5.png)
 
 
